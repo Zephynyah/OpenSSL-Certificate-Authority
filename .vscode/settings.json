@@ -2,6 +2,7 @@
     "cSpell.words": [
         "arithmatex",
         "baselevel",
+        "cairosvg",
         "crlnumber",
         "fontawesome",
         "inlinehilite",
@@ -9,6 +10,7 @@
         "keyid",
         "linenums",
         "materialx",
+        "mkdocs",
         "newcerts",
         "noopener",
         "noout",
@@ -22,6 +24,7 @@
         "rsigner",
         "secretpassword",
         "superfences",
-        "twemoji"
+        "twemoji",
+        "Willett"
     ]
 }

@@ -11,5 +11,5 @@ This guide demonstrates how to act as your own certificate authority (CA) using 
 - Online Certificate Status Protocol
 - Appendix
 
-[See full table of contents.](index-full.md)
+[See full table of contents.](guides/index.md)
 

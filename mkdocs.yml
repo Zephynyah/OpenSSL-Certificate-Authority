@@ -1,32 +1,44 @@
 site_name: OpenSSL Certificate Authority
-site_url: https://zephynyah.github.io/mkdocs-openssl-certificate-authority
+site_url: https://zephynyah.github.io/zeph-opensll-certificate-authority/
+site_description: A Guide for Creating a certificate authority (CA) using the OpenSSL.
+site_author: Zephynyah
+
+repo_url: https://github.com/Zephynyah/zeph-opensll-certificate-authority
+
 nav:
   - Home: index.md
   - About:
-    - Introduction: introduction.md
-    - License: 'license.md'
-    - Release Notes: 'release-notes.md'
-  - Create The Root Pair: create-the-root-pair.md
-  - Create The Intermediate Pair: create-the-intermediate-pair.md
-  - Sign Server and Client Certificates: sign-server-and-client-certificate.md
-  - Certificate Revocation Lists: certificate-revocation-lists.md
-  - Online Certificate Status Protocol: online-certificate-status-protocol.md
+    - about/index.md
+    - Release Notes: 'about/release-notes.md'
+    - Contributing: about/contributing.md
+    - License: 'about/license.md'
+  - Guides:
+    - guides/index.md
+    - Create The Root Pair: guides/create-the-root-pair.md
+    - Create The Intermediate Pair: guides/create-the-intermediate-pair.md
+    - Sign Server and Client Certificates: guides/sign-server-and-client-certificate.md
+    - Certificate Revocation Lists: guides/certificate-revocation-lists.md
+    - Online Certificate Status Protocol: guides/online-certificate-status-protocol.md
   - Appendix:
+    - appendix/index.md
     - Root CA Configuration File: appendix/root-configuration.md
     - Intermediate CA Configuration File: appendix/intermediate-configuration.md
 theme:
-  # name: readthedocs
+  name: readthedocs
   name: material
   features:
     # - navigation.tabs
     - navigation.sections
     - toc.integrate
-    # - navigation.top
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - announce.dismiss
+    - navigation.path
+    - navigation.indexes
   language: en
   palette:
     - scheme: default
@@ -46,16 +58,9 @@ plugins:
   - social
   - search
 
-extra:
-  version: 0.1.0
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/james-willett
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/TheJamesWillett
-    - icon: fontawesome/brands/linkedin
-
 markdown_extensions:
+  - toc:
+      title: "ZEPH"
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -71,9 +76,19 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  version: 0.1.0
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/james-willett
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+
 copyright: |
-  &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">Jason Hickey</a>
+  Copyright &copy; 2023 - 2024 <a href="https://github.com/Zephynyah/"  target="_blank" rel="noopener">Jason Hickey</a>
