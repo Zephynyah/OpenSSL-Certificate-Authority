@@ -1,0 +1,79 @@
+site_name: OpenSSL Certificate Authority
+site_url: https://zephynyah.github.io/mkdocs-openssl-certificate-authority
+nav:
+  - Home: index.md
+  - About:
+    - Introduction: introduction.md
+    - License: 'license.md'
+    - Release Notes: 'release-notes.md'
+  - Create The Root Pair: create-the-root-pair.md
+  - Create The Intermediate Pair: create-the-intermediate-pair.md
+  - Sign Server and Client Certificates: sign-server-and-client-certificate.md
+  - Certificate Revocation Lists: certificate-revocation-lists.md
+  - Online Certificate Status Protocol: online-certificate-status-protocol.md
+  - Appendix:
+    - Root CA Configuration File: appendix/root-configuration.md
+    - Intermediate CA Configuration File: appendix/intermediate-configuration.md
+theme:
+  # name: readthedocs
+  name: material
+  features:
+    # - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    # - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      # accent: lime
+
+plugins:
+  - social
+  - search
+
+extra:
+  version: 0.1.0
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/james-willett
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+copyright: |
+  &copy; 2023 <a href="https://github.com/james-willett"  target="_blank" rel="noopener">Jason Hickey</a>
