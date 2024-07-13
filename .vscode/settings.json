@@ -21,6 +21,7 @@
         "pymdownx",
         "RANDFILE",
         "rkey",
+        "Roboto",
         "rsigner",
         "secretpassword",
         "superfences",
